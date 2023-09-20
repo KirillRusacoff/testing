@@ -1,0 +1,129 @@
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 30px;
+    row-gap: 30px;
+
+    color: $text-dark-color;
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        flex-direction: column;
+        row-gap: 50px;
+    }
+}
+
+.form__input {
+    width: 370px;
+    height: 48px;
+    padding: 0 10px;
+
+    border-radius: 3px;
+    border: 1px solid #FFF;
+    background-color: rgba(255, 255, 255, 0.85);
+
+    font-size: 18px;
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        width: 290px;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.form__range {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+
+    width: 770px;
+
+    &-desc {
+        display: flex;
+        justify-content: space-between;
+
+        font-size: 18px;
+
+        color: $text-white-color;
+
+        /* Mobile XS */
+        @media (max-width: 599px) {
+            align-items: center;
+        }
+
+        span {
+            /* Mobile XS */
+            @media (max-width: 599px) {
+                width: 230px;
+            };
+        }
+    }
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        width: 370px;
+    }
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        width: 290px;
+    }
+}
+
+.form__file {
+    width: 0;
+    height: 0;
+    
+    &--custom {
+        position: relative;
+        padding: 12px 96px 12px 118px;
+
+        border-radius: 3px;
+        border: 2px solid #3E9CDC;
+        background: #FFF;
+
+        font-size: 15px;
+        text-transform: uppercase;
+
+        /* Mobile XS */
+        @media (max-width: 599px) {
+            padding: 12px 67px;
+
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 25%;
+            transform: translate(-50%, -50%);
+
+            width: 20px;
+            height: 20px;
+
+            background-image: url('./../img/icons/input-icon.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+
+            /* Mobile XS */
+            @media (max-width: 599px) {
+                left: 15%;
+            }
+        }
+    }
+}
+
+.form__button {
+    width: 370px;
+    margin: 0 auto;
+    margin-top: 20px;
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        width: 290px;
+    }
+}
