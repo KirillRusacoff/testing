@@ -1,0 +1,18 @@
+.nav {
+    display: flex;
+    align-items: center;
+    column-gap: 60px;
+    flex-wrap: wrap;
+    row-gap: 10px;
+
+    max-width: 436px;
+
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        display: none;
+    }
+}

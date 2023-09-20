@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing</title>
+
+    <link rel="stylesheet" href="./css/main.css">
+
+    <link rel="apple-touch-icon" sizes="76x76" href="/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/img/favicons/site.webmanifest">
+    <link rel="mask-icon" href="/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/img/favicons/favicon.ico">
+
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="msapplication-config" content="/img/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="logo">LoremIpsum.<span>Net</span></div>
+            <ul class="nav">
+                <li>
+                    <a href="#!">Бизнес</a>
+                </li>
+                <li>
+                    <a href="#!">О нас</a>
+                </li>
+                <li>
+                    <a href="#!">Цены</a>
+                </li>
+                <li>
+                    <a href="#!">Оформить заказ</a>
+                </li>
+            </ul>
+            <button type="button" class="menu-btn">
+                <span class="menu-btn__middle"></span>
+            </button>
+            </div>
+        </div>
+    </header>
+    <section class="banner">
+        <div class="container">
+            <div class="banner__title">
+                <h1 class="title"><span>Lorem ipsum</span> dolor sit ametconsectetur <span>adipiscing</span></h1>
+            </div>
+            <p class="banner__text">
+                At vero eos et accusamus et iusto odio dignissimos ducimus!
+            </p>
+            <ul class="banner__list">
+                <li class="banner__item">Totam rem aperiam eaque ipsa</li>
+                <li class="banner__item">Sit voluptatem accusantium doloremque laudantium</li>
+                <li class="banner__item">Sed ut perspiciatis, unde omnis iste natus error</li>
+            </ul>
+            <div class="banner__buttons">
+                <button type="button" class="button">заказать</button>
+                <button type="button" class="button button--light">подробнее</button>
+            </div>
+        </div>
+    </section>
+    <main class="main">
+        <div class="main__wrapper">
+            <div class="container">
+                <div class="main__title">
+                    <h2 class="title-2">Оформление <span>Заказа</span></h2>
+                </div>
+                <p class="main__text">
+                    Перед заполнением формы ознакомьтесь с нашей схемой работы!
+                </p>
+                <div class="main__cards">
+                    <div class="card">
+                        <div class="card__img">
+                            <img src="./img/icons/works-icon-1.svg" alt="изображение этапа работы">
+                        </div>
+                        <p class="card__text">
+                            Lorem ipsum dolorsit amet
+                        </p>
+                    </div>
+                    <div class="card">
+                        <div class="card__img">
+                            <img src="./img/icons/works-icon-2.svg" alt="изображение этапа работы">
+                        </div>
+                        <p class="card__text">
+                            Сonsecteturadipiscing elit
+                        </p>
+                    </div>
+                    <div class="card">
+                        <div class="card__img">
+                            <img src="./img/icons/works-icon-3.svg" alt="изображение этапа работы">
+                        </div>
+                        <p class="card__text">
+                            Sed do eiusmod tempor
+                        </p>
+                    </div>
+                    <div class="card">
+                        <div class="card__img">
+                            <img src="./img/icons/works-icon-4.svg" alt="изображение этапа работы">
+                        </div>
+                        <p class="card__text">
+                            Esse cillum doloreeu fugiat
+                        </p>
+                    </div>
+                    <div class="card">
+                        <div class="card__img">
+                            <img src="./img/icons/works-icon-5.svg" alt="изображение этапа работы">
+                        </div>
+                        <p class="card__text">
+                            Excepteur sint occaecat cupidatat non proident
+                        </p>
+                    </div>
+                </div>
+                <form action="#!" method="post" enctype="multipart/form-data" class="form">
+                    <select name="type-sistem" class="form__input">
+                        <option selected hidden>Выберите тип системы</option>
+                        <option>Sed ut perspiciatis</option>
+                        <option>Nemo enim ipsam</option>
+                        <option>Et harum quidem</option>
+                        <option>Temporibus autem</option>
+                        <option>Itaque earum rerum</option>
+                    </select>
+                    <input type="email" name="email" placeholder="Ваш e-mail" class="form__input">
+                    <input type="text" name="user-name" placeholder="Ваше имя" class="form__input">
+                    <div class="form__range">
+                        <div class="form__range-desc">
+                            <span>Sed ut perspiciatis, unde omnis iste natus</span>
+                            <p><output id="value"></output><span>%</span></p>
+                        </div>
+                        <input type="range" min="0" max="100" step="1" name="range" id="range" class="form__range-input">
+                    </div>
+                    <label for="file">
+                        <input type="file" name="file" class="form__file" id="file">
+                        <span class="form__file--custom">Прикрепить файл</span>
+                    </label>
+                    <button type="submit" class="form__button button">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <p class="footer__copyright">
+                    &copy; 2018 «LoremIpsum.net» Все права защищены.
+                </p>
+                <div class="footer__systems">
+                    <p class="footer__icon-relative system">Qiwi wallet</p>
+                    <p class="footer__icon-relative system">Yandex Money</p>
+                    <p class="footer__icon-relative system">Web Money</p>
+                </div>
+                <div class="footer__contacts">
+                    <a href="mailto:info@ipsum228.com" class="footer__icon-relative">info@ipsum228.com</a>
+                    <a href="#!" class="footer__icon-relative">Мы вконтакте</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+</html>
