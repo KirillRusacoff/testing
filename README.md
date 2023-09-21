@@ -1,4 +1,4 @@
-Ссылка на сайт - https://kirillrusacoff.github.io/accounting/
+Ссылка на сайт - https://kirillrusacoff.github.io/testing/
 
 ********************
 Adaptive, cross-browser, valid layout of the landing page based on the layout from Figma. 
